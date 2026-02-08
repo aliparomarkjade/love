@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Top images */
+.image {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.image img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.image img:hover {
+  transform: scale(1.05);
+}
+
+/* Flowers */
+.png {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  margin: 20px 0;
+}
+
+.png img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Message card */
+#mess {
+  background: white;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  width: 360px;
+  animation: fadeIn 1.2s ease;
+}
+
+#mess p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile friendly */
+@media (max-width: 480px) {
+  .image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .png {
+    width: 300px;
+  }
+
+  #mess {
+    width: 300px;
+  }
+}
+
+/* Video section styling */
+.vid {
+  display: flex;
+  justify-content: space-between; /* push videos to edges */
+  align-items: center;
+  width: 360px; /* match your container width */
+  margin: 20px 0;
+}
+
+.vid video {
+  width: 150px; /* adjust size to fit container */
+  height: 150px;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  object-fit: cover;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.vid video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .vid {
+    width: 300px;
+  }
+  .vid video {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <img src="M.jpg">
+        <img src="J.jpg">
+        <img src="A.jpg">
+    </div>
+
+    <div class="png">
+        <img src="mor.png">
+      <div class="flo">
+        <img src="flower.png">
+    </div>
+    </div>
+
+    <div class="message" id="mess">
+        <p>Happy Valentine’s Day ❤️
+I hope this makes you smile today and always.<br>
+        Thank you love, sa love na binibigay mo sakin sa araw araw
+        sa effort kahit na minsan nag kakaroon tayo ng tampuhan mas pinipili pa rin nating pag-usapan. Basta always
+        remember na Mahal kita palagi, kasama moko sa lahat mapa taas man yan oh baba kasama moko.
+        And syempre isa pa wag mong iisipin na love lang kita dahil sa kung ano yung mga bagay mo na nabibigay sakin. Love kita 
+        dahil yun yung nararamdaman ko, kaya hayaan mokong mahalin ka hanggang kailan will ni lord.
+        Iloveyousomuch Love, ito lang po muna ang kayang ibigay ng bf mo bawi nalang sa susunod.
+        
+        </p>
+
+
+    </div>
+<div class="vid">
+    <video width="200" height="200" controls autoplay>
+  <source src="Mark.mp4" type="video/mp4">
+    </video>
+
+   <video width="200" height="200" controls autoplay>
+  <source src="jade.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="music">
+
+    <!-- Background Music -->
+<audio autoplay loop>
+  <source src="love_song.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+</div>
+
+</body>
+</html>
